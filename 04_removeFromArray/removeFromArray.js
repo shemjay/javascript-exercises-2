@@ -1,5 +1,14 @@
-const removeFromArray = function(arg) {
+const removeFromArray = function(array, ...args) {
+    //Was unable to solve it
+
+    const newArray = [];
     
+    array.forEach((item) => {
+        if (!args.includes(item)) {
+          newArray.push(item);
+        }
+      });
+      return newArray;
 };
 
 // Do not edit below this line
